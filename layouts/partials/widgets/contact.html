@@ -52,6 +52,13 @@
         {{- if $autolink }}<a href="mailto:{{ $data.email }}">{{ $data.email }}</a>{{ else }}{{ $data.email }}{{ end -}}
         </span>
       </li>
+
+      <li>
+        <i class="fa-li fas fa-university fa-2x" aria-hidden="true"></i>
+        <span id="person-email">
+        {{- if $autolink }}<a href="mailto:{{ $data.alt_email }}">{{ $data.alt_email }}</a>{{ else }}{{ $data.alt_email }}{{ end -}}
+        </span>
+      </li>
       {{ end }}
 
       {{ with $data.phone }}
